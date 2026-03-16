@@ -186,6 +186,17 @@ color:#bdbdbd;
 
 }
 
+/* Evitar que los links hereden azul/subrayado y mantener layout flex */
+.contacto-info a.info-item {
+    display: flex;             /* para que icono y texto queden al lado */
+    align-items: flex-start;   /* como antes */
+    gap: 15px;                 /* espacio entre icono y texto */
+    margin-bottom: 25px;       /* igual que antes */
+    
+    text-decoration: none;     /* quitar subrayado */
+    color: inherit;            /* mantener color del texto original */
+}
+
 .contacto-cta{
 
 background:#111;
@@ -338,6 +349,25 @@ border-color:#e5a100;
 
 .info-item:hover .icono .icon{
 color:#e5a100;
+}
+
+.fade-in{
+    opacity:0;
+    transform:translateY(40px);
+    animation:aparecer 1s forwards;
+}
+
+.fade-delay-1{animation-delay:0.3s;}
+.fade-delay-2{animation-delay:0.5s;}
+.fade-delay-3{animation-delay:0.7s;}
+.fade-delay-4{animation-delay:0.9s;}
+.fade-delay-5{animation-delay:1.1s;}
+
+@keyframes aparecer{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 @media (max-width:768px){
