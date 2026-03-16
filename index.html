@@ -1,77 +1,217 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title> Foto y Video - Gustavo </title>
+<title>Gustavo Foto y Video</title>
 
 <link rel="stylesheet" href="Css/Fotos Css.css">
-
 </head>
 
 <body>
 
-<header> 
-<div class="logo-titulo"> 
-    <img src="imagenes\logo.jpg" alt="Logo Gustavo Foto y Video" class="logo">  
-    <h1 id="titulogrande"> Gustavo - Foto y Video </h1>
-</div>
+  <div class="pagina">
 
+<header class="header">
 
-<nav>  
-    <ul>
-        <li> <a href ="#"> Inicio </a> </li>
-        <li> <a href ="#"> Trabajos </a> </li>
-        <li> <a href ="#"> Servicios </a> </li>
-        <li> <a href ="#"> Contacto </a> </li>
-    </ul>
+<h1 class="logo">GUSTAVO</h1>
+
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">
+<span></span>
+<span></span>
+<span></span>
+</label>
+
+<nav>
+<ul>
+<li><a href="#Inicio">Inicio</a></li>
+<li><a href="#Trabajos">Trabajos</a></li>
+<li><a href="#Servicios">Servicios</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
 </nav>
 
 </header>
 
-<main> 
-    <section class="hero">
-        <h2>Capturando momentos que duran para siempre</h2>
-        <p>Fotografía profesional para eventos, retratos y más</p>
-    </section>
 
-    <section class="servicios">
-        <div class="servicio">
-            <h3> Eventos </h3>
-            <p> Bodas, Cumpleaños, Bautismos y Eventos Corporativos </p>
-        </div>  
+<section class="hero" id="Inicio">
 
-        <div class="servicio">
-            <h3> Books y Retratos </h3>
-            <p> Sesiones Profesionales Individuales, Familiares o de Pareja </p>
-        </div>   
+
+
+<div class="hero-text">
+
+    <span class="hero-vertical">GUSTAVO</span>
+
+<p class="sub">FOTO Y VIDEO</p>
+
+<h2>
+Capturamos<br>
+lo que el tiempo<br>
+no puede borrar
+</h2>
+
+<p class="descripcion">
+Fotografía profesional para eventos, retratos y más.
+</p>
+
+<a href="contacto.html" class="cta-btn">CONTACTAR</a>
+
+</div>
+
+<div class="hero-img">
+<img src="https://picsum.photos/500/700">
+</div>
+
 </section>
 
-    <h2 id="titulogaleria"> Galeria de Fotos </h2>
-    <section class="galeria">  
 
-        <img src="https://picsum.photos/300">
-        <img src="https://picsum.photos/301">
-        <img src="https://picsum.photos/302">
-        <img src="https://picsum.photos/303">
-        <img src="https://picsum.photos/304">
-        <img src="https://picsum.photos/305">
-        
-    </section>
+<section class="servicios" id="Servicios">
 
-</main>
+  <p id="sub"> Servicios </p>
 
-<footer>
+<div class="servicio">
+  
+<h3>Eventos</h3>
+<p>Bodas, Cumpleaños, Bautismos y Eventos Corporativos. Cada celebración merece ser inmortalizada con el cuidado y la atención que se merece.</p>
+</div>
 
-<p>© 2026</p>
+<div class="servicio">
+<h3>Retratos</h3>
+<p>Sesiones profesionales individuales, familiares o de pareja. Retratos que capturan la esencia y personalidad de cada persona.</p>
+</div>
+
+</section>
+
+<div class="container" id="Trabajos">
+
+<div class="titulo-seccion">
+<p class="sub"> Galería </p>
+<h2>Trabajos Recientes</h2>
+</div>
+
+<section class="galeria" id="galeria">
+
+<a href="#img1" class="foto">
+<img src="https://picsum.photos/300">
+<div class="overlay"><p>Boda</p></div>
+</a>
+
+<a href="#img2" class="foto">
+<img src="https://picsum.photos/302">
+<div class="overlay"><p>Retrato</p></div>
+</a>
+
+<a href="#img3" class="foto">
+<img src="https://picsum.photos/304">
+<div class="overlay"><p>Evento</p></div>
+</a>
+
+<a href="#img4" class="foto">
+<img src="https://picsum.photos/306">
+<div class="overlay"><p>Sesión</p></div>
+</a>
+
+<a href="#img5" class="foto">
+<img src="https://picsum.photos/308">
+<div class="overlay"><p>Bautismo</p></div>
+</a>
+
+<a href="#img6" class="foto">
+<img src="https://picsum.photos/310">
+<div class="overlay"><p>Retrato</p></div>
+</a>
+
+</section>
+
+<div id="img1" class="lightbox">
+<a href="#img6" class="prev">❮</a>
+<img src="https://picsum.photos/300">
+<a href="#img2" class="next">❯</a>
+<a href="#galeria" class="cerrar">✕</a>
+</div>
+
+<div id="img2" class="lightbox">
+<a href="#img1" class="prev">❮</a>
+<img src="https://picsum.photos/302">
+<a href="#img3" class="next">❯</a>
+<a href="#galeria" class="cerrar">✕</a>
+</div>
+
+<div id="img3" class="lightbox">
+<a href="#img2" class="prev">❮</a>
+<img src="https://picsum.photos/304">
+<a href="#img4" class="next">❯</a>
+<a href="#galeria" class="cerrar">✕</a>
+</div>
+
+<div id="img4" class="lightbox">
+<a href="#img3" class="prev">❮</a>
+<img src="https://picsum.photos/306">
+<a href="#img5" class="next">❯</a>
+<a href="#galeria" class="cerrar">✕</a>
+</div>
+
+<div id="img5" class="lightbox">
+<a href="#img4" class="prev">❮</a>
+<img src="https://picsum.photos/308">
+<a href="#img6" class="next">❯</a>
+<a href="#galeria" class="cerrar">✕</a>
+</div>
+
+<div id="img6" class="lightbox">
+<a href="#img5" class="prev">❮</a>
+<img src="https://picsum.photos/310">
+<a href="#img1" class="next">❯</a>
+<a href="#galeria" class="cerrar">✕</a>
+</div>
+<section class="cta">
+
+<h2>¿Listo para capturar tu próximo momento?</h2>
+
+<a href="contacto.html" class="cta-btn">CONTACTAR</a>
+
+</section>
+
+<footer class="footer">
+
+<div class="footer-content">
+
+<h2>GUSTAVO</h2>
+
+<p>Fotografía y Video Profesional</p>
+
+<div class="footer-links">
+
+<a href="#">
+<svg viewBox="0 0 24 24" class="icon">
+<path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.25 1.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+</svg>
+Instagram
+</a>
+
+<a href="#">
+<svg viewBox="0 0 24 24" class="icon">
+<path d="M20 3.5A11.94 11.94 0 0 0 12 1 11.94 11.94 0 0 0 4 3.5C1.8 5.7 1 8.4 1 12c0 6.1 4.9 11 11 11s11-4.9 11-11c0-3.6-.8-6.3-3-8.5zm-8 17.5a9 9 0 1 1 0-18 9 9 0 0 1 0 18zm4.5-6.5c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.1.2-.6.8-.7 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.3-1.4-1.5-.1-.2 0-.3.1-.4.1-.1.2-.3.3-.4.1-.1.1-.2.2-.3.1-.1 0-.2 0-.3 0-.1-.5-1.2-.7-1.6-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.4.9 2.5c.1.2 1.6 2.4 3.8 3.3.5.2 1 .4 1.3.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2 0-.1-.2-.2-.4-.3z"/>
+</svg>
+WhatsApp
+</a>
+
+<a href="#">
+<svg viewBox="0 0 24 24" class="icon">
+<path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 0v.01L12 13l8-6.99V6H4zm16 2.24l-7.4 6.47a1 1 0 0 1-1.2 0L4 8.24V18h16V8.24z"/>
+</svg>
+Email
+</a>
+
+</div>
+
+
+<p class="copyright">
+© 2026 Gustavo Foto y Video
+</p>
 
 </footer>
 
-
 </body>
-
 </html>

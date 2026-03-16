@@ -1,0 +1,384 @@
+*{
+box-sizing:border-box;
+}
+
+html,body{
+min-height:100%;
+overflow-x: hidden;
+}
+
+header{
+
+position:sticky;
+top:0;
+left:0;
+
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 40px;
+
+background:transparent;
+
+border-bottom:1px solid transparent;
+
+z-index:1000;
+
+transition:0.3s;
+
+}
+
+header:hover{
+background:#000000;
+border-bottom:1px solid #202020;
+}
+
+.logo{
+letter-spacing:4px;
+font-family:'Times New Roman', Times, serif
+}
+
+#menu-toggle{
+display:none;
+}
+
+.menu-icon{
+display:none;
+flex-direction:column;
+cursor:pointer;
+gap:5px;
+}
+
+.menu-icon span{
+width:25px;
+height:2px;
+background:white;
+display:block;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+
+}
+
+nav a{
+text-decoration:none;
+color:#cfcfcf;
+font-weight:bold;
+position:relative;
+padding-bottom:5px;
+}
+
+nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:0;
+height:2px;
+background:#e5c100;
+transition:0.3s;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+body{
+
+background:
+radial-gradient(
+circle at 65% 10%,
+rgba(229,161,0,0.35) 0%,
+rgba(46,45,45,0.6) 35%,
+#1f1e1e 70%
+);
+
+background-color:#0f0f0f;
+color:white;
+
+}
+
+.contacto{
+
+max-width:1200px;
+margin:auto;
+padding:160px 8% 120px 8%;
+
+}
+
+.contacto-header{
+
+margin-bottom:80px;
+
+}
+
+
+
+.contacto-header h1{
+font-size:clamp(32px, 6vw, 64px);
+}
+
+
+
+.contacto-header span{
+
+color:#e5a100;
+
+}
+
+.descripcion{
+
+color:#bdbdbd;
+
+}
+
+
+.contacto-contenido{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:120px;
+}
+
+
+
+
+
+.info-item{
+
+display:flex;
+align-items:flex-start;
+gap:15px;
+margin-bottom:25px;
+
+}
+
+.icono{
+
+width:38px;
+height:38px;
+border:1px solid #2a2a2a;
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+fill:currentColor;
+
+}
+
+.info-item h4{
+
+color:rgb(129,126,126);
+font-size:12px;
+letter-spacing:2px;
+
+}
+
+.info-item p{
+
+color:#bdbdbd;
+
+}
+
+.contacto-cta{
+
+background:#111;
+border:1px solid #2a2a2a;
+
+padding:50px;
+
+border-radius:12px;
+
+max-width:420px;
+
+box-shadow:0 10px 40px rgba(0,0,0,0.5);
+
+}
+
+.contacto-cta h2{
+
+font-size:32px;
+margin-bottom:15px;
+
+}
+
+.contacto-cta p{
+
+color:#bdbdbd;
+margin-bottom:30px;
+
+}
+
+.cta-btn{
+
+display:inline-block;
+
+padding:16px 36px;
+
+background:#e5a100;
+color:black;
+
+font-weight:600;
+text-decoration:none;
+
+border-radius:40px;
+
+transition:0.3s;
+
+box-shadow:0 10px 30px rgba(229,161,0,0.35);
+
+}
+
+.cta-btn:hover{
+
+background:#ffb400;
+transform:translateY(-3px);
+
+}
+
+.footer{
+
+margin-top:120px;
+padding:40px 8%;
+
+text-align:center;
+
+color:#777;
+
+border-top:1px solid #2a2a2a;
+}
+
+
+header{
+position:sticky;
+top:0;
+width:100%;
+
+background:#0f0f0f;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 40px;
+
+border-bottom:1px solid #2a2a2a;
+
+z-index:1000;
+
+flex-wrap:wrap; 
+transition: 0.3s;
+backdrop-filter:blur(10px);
+background:rgba(15,15,15,0.9);
+}
+
+.footer{
+padding:30px 8% 10px 8%;
+text-align:center;
+border-top:1px solid #2a2a2a;
+}
+
+.footer-content h2{
+letter-spacing:4px;
+margin-bottom:10px;
+}
+
+.footer-content p{
+color:#aaa;
+margin-bottom:25px;
+}
+
+.footer-links{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-bottom:30px;
+}
+
+.footer-links a{
+
+display:flex;
+align-items:center;
+gap:8px;
+
+text-decoration:none;
+color:#ccc;
+
+transition:0.3s;
+
+}
+
+.footer-links a:hover{
+color:#e5c100;
+}
+
+.icon{
+
+width:16px;
+height:16px;
+
+fill:currentColor;
+
+}
+
+.copyright{
+font-size:12px;
+color:#777;
+}
+
+.info-item:hover .icono{
+border-color:#e5a100;
+}
+
+.info-item:hover .icono .icon{
+color:#e5a100;
+}
+
+@media (max-width:768px){
+
+.contacto{
+padding:120px 30px;
+}
+
+.contacto-contenido{
+grid-template-columns:1fr;
+gap:60px;
+}
+
+.contacto-cta{
+max-width:100%;
+}
+
+nav ul{
+gap:20px;
+}
+
+.contacto-header h1{
+font-size:40px;
+}
+
+}
+
+@media (max-width:480px){
+
+header{
+padding:15px 20px;
+}
+
+nav ul{
+gap:15px;
+font-size:14px;
+}
+
+.cta-btn{
+width:100%;
+text-align:center;
+}
+
+}
